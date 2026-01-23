@@ -1,3 +1,12 @@
+# macOS
+.DS_Store
+
+# Numbers files (too large for git)
+*.numbers
+
+# Screenshots/images folders
+printscreens/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
