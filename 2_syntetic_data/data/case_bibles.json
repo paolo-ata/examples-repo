@@ -1,0 +1,1848 @@
+[
+  {
+    "case_id": "W1",
+    "sprache": "FR",
+    "kanton": "VD",
+    "gericht": "Tribunal de district de Lausanne",
+    "branche": "BRH",
+    "cluster": "Wasser/Abdichtung – Duschen",
+    "parteien": {
+      "vn": "AquaSan GmbH",
+      "g01": "STWEG Clos des Vignes",
+      "anwalt_vn": "Me Claire Reppette",
+      "anwalt_g01": "Me Julien Favoni"
+    },
+    "sachverhalt": {
+      "kurz": "Wiederkehrende Wasseraustritte im Duschbereich mehrerer Einheiten, Verdacht auf fehlende Abdichtung.",
+      "zeitleiste": [
+        {
+          "t": "2024-02-12",
+          "event": "Erste Mängelrüge STWEG an VN"
+        },
+        {
+          "t": "2024-03-05",
+          "event": "VN-Besichtigung, provisorische Abdichtung"
+        },
+        {
+          "t": "2024-05-10",
+          "event": "Privatgutachten STWEG: Abdichtung fehlt"
+        },
+        {
+          "t": "2024-05-28",
+          "event": "Haftpflichtversicherung Deckungsvorbehalt und Akteneinholung"
+        },
+        {
+          "t": "2024-07-03",
+          "event": "Einvernehmen über gemeinsame Expertise"
+        },
+        {
+          "t": "2024-09-18",
+          "event": "Expertenbericht: Nachbesserung erforderlich"
+        },
+        {
+          "t": "2024-10-15",
+          "event": "Vergleich per Saldo aller Ansprüche"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "SIA 118",
+        "OR 371",
+        "ZPO 158"
+      ],
+      "strittig": [
+        "Planungsfehler vs. Ausführungsfehler",
+        "Umfang Mangelfolgeschaden"
+      ],
+      "deckung": [
+        "Mängelbehebung im Unternehmerrisiko",
+        "Mangelfolgeschaden gedeckt (BRH)",
+        "Konventionalstrafen ausgeschlossen"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 95000,
+      "erwartete_spanne": {
+        "min": 40000,
+        "max": 110000
+      },
+      "sb": 1000,
+      "pe_logic": "PE steht Haftpflichtversicherung zu"
+    },
+    "status": "vergleich",
+    "dokument_plan": [
+      {
+        "typ": "schadenanmeldung",
+        "datum": "2024-02-20",
+        "sprache": "FR"
+      },
+      {
+        "typ": "akteneinholung_vn",
+        "datum": "2024-05-28",
+        "sprache": "FR"
+      },
+      {
+        "typ": "stellungnahme_vn",
+        "datum": "2024-06-07",
+        "sprache": "FR"
+      },
+      {
+        "typ": "parteigutachten_g01",
+        "datum": "2024-05-10",
+        "sprache": "FR"
+      },
+      {
+        "typ": "gemeinsame_expertise_auftrag",
+        "datum": "2024-07-03",
+        "sprache": "FR"
+      },
+      {
+        "typ": "expertenbericht",
+        "datum": "2024-09-18",
+        "sprache": "FR"
+      },
+      {
+        "typ": "vergleichsangebot",
+        "datum": "2024-10-01",
+        "sprache": "FR"
+      },
+      {
+        "typ": "ev_saldo",
+        "datum": "2024-10-15",
+        "sprache": "FR"
+      }
+    ]
+  },
+  {
+    "case_id": "W2",
+    "sprache": "DE",
+    "kanton": "BE",
+    "gericht": "Regionalgericht Bern-Mittelland",
+    "branche": "BHB",
+    "cluster": "Wasser/Abdichtung – Sockel & Tiefgarage",
+    "parteien": {
+      "vn": "Sockel & Putz AG",
+      "g01": "Ehepaar Kelleroni",
+      "anwalt_vn": "RA Markus Clueose",
+      "anwalt_g01": "RAin Andrea Meier"
+    },
+    "sachverhalt": {
+      "kurz": "Feuchte Sockelbereiche und Wasser in der Tiefgarage. Fehlender Blechabschluss, Abläufe unzureichend.",
+      "zeitleiste": [
+        {
+          "t": "2023-11-22",
+          "event": "Schadenmeldung VN an Haftpflichtversicherung"
+        },
+        {
+          "t": "2023-12-05",
+          "event": "Begehung Haftpflichtversicherung/VN"
+        },
+        {
+          "t": "2024-01-12",
+          "event": "Sanierungskonzept Sockelblech & Entwässerung"
+        },
+        {
+          "t": "2024-02-01",
+          "event": "Einigung ohne Schlichtung"
+        },
+        {
+          "t": "2024-03-15",
+          "event": "Nachbesserung abgeschlossen"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "SIA 118"
+      ],
+      "strittig": [
+        "Verantwortung Abläufe (Bauleitung vs. Unternehmer)"
+      ],
+      "deckung": [
+        "Mangelfolgeschaden klein",
+        "Mängelbehebung nicht gedeckt"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 32000,
+      "erwartete_spanne": {
+        "min": 10000,
+        "max": 35000
+      },
+      "sb": 1000,
+      "pe_logic": "PE steht Haftpflichtversicherung zu"
+    },
+    "status": "vergleich",
+    "dokument_plan": [
+      {
+        "typ": "schadenanmeldung",
+        "datum": "2023-11-22",
+        "sprache": "DE"
+      },
+      {
+        "typ": "Haftpflichtversicherungbesichtigung_protokoll",
+        "datum": "2023-12-05",
+        "sprache": "DE"
+      },
+      {
+        "typ": "stellungnahme_vn",
+        "datum": "2023-12-12",
+        "sprache": "DE"
+      },
+      {
+        "typ": "sanierungskonzept",
+        "datum": "2024-01-12",
+        "sprache": "DE"
+      },
+      {
+        "typ": "vergleichsangebot",
+        "datum": "2024-01-25",
+        "sprache": "DE"
+      },
+      {
+        "typ": "ev_saldo",
+        "datum": "2024-02-01",
+        "sprache": "DE"
+      },
+      {
+        "typ": "abschlussnotiz",
+        "datum": "2024-03-20",
+        "sprache": "DE"
+      }
+    ]
+  },
+  {
+    "case_id": "W3",
+    "sprache": "FR",
+    "kanton": "VS",
+    "gericht": "Tribunal de district de Monthey",
+    "branche": "LUHBH",
+    "cluster": "Wasser/Abdichtung – Maschinenkammer unter Reservoir (Prozess)",
+    "parteien": {
+      "vn": "Rettell Systems SA",
+      "g01": "Fuuppi SA",
+      "anwalt_vn": "Me Pierre Jordanni",
+      "anwalt_g01": "Me Sabine Roswerat"
+    },
+    "sachverhalt": {
+      "kurz": "Überflutung Maschinenkammer unter Schneereservoir. Vorwurf: falsche Stabilitäts-/Deichbeurteilung.",
+      "zeitleiste": [
+        {
+          "t": "2023-04-20",
+          "event": "Massiver Wassereintritt, Betriebsausfall"
+        },
+        {
+          "t": "2023-05-02",
+          "event": "Haftungsrüge G01 an VN"
+        },
+        {
+          "t": "2023-06-15",
+          "event": "Schadenmeldung VN an Haftpflichtversicherung"
+        },
+        {
+          "t": "2023-09-01",
+          "event": "Gesuch vBO ZPO 158"
+        },
+        {
+          "t": "2024-01-30",
+          "event": "Expertenauftrag und Fragenkatalog"
+        },
+        {
+          "t": "2024-05-15",
+          "event": "Gerichtsexpertise: geteilte Ursachen"
+        },
+        {
+          "t": "2025-02-10",
+          "event": "Urteil 1. Instanz: Teilerfolg, anteilige Haftung VN"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "ZPO 158",
+        "SIA 118"
+      ],
+      "strittig": [
+        "Kausalität Deich vs. Baumeisterdetails",
+        "Umfang Folgeschaden"
+      ],
+      "deckung": [
+        "Berufshaftpflicht: Sachschäden gedeckt",
+        "Regress gegen Mithaftende"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 720000,
+      "erwartete_spanne": {
+        "min": 300000,
+        "max": 900000
+      },
+      "sb": 5000,
+      "pe_logic": "PE steht Haftpflichtversicherung zu"
+    },
+    "status": "prozess",
+    "dokument_plan": [
+      {
+        "typ": "schadenanmeldung",
+        "datum": "2023-06-15",
+        "sprache": "FR"
+      },
+      {
+        "typ": "akteneinholung_vn",
+        "datum": "2023-06-22",
+        "sprache": "FR"
+      },
+      {
+        "typ": "gesuch_vbo",
+        "datum": "2023-09-01",
+        "sprache": "FR"
+      },
+      {
+        "typ": "prozessmeldung_intern",
+        "datum": "2023-09-05",
+        "sprache": "FR"
+      },
+      {
+        "typ": "expertenauftrag",
+        "datum": "2024-01-30",
+        "sprache": "FR"
+      },
+      {
+        "typ": "gerichtsexpertise",
+        "datum": "2024-05-15",
+        "sprache": "FR"
+      },
+      {
+        "typ": "klage",
+        "datum": "2024-09-20",
+        "sprache": "FR"
+      },
+      {
+        "typ": "klageantwort",
+        "datum": "2024-11-05",
+        "sprache": "FR"
+      },
+      {
+        "typ": "urteilsauszug",
+        "datum": "2025-02-10",
+        "sprache": "FR"
+      },
+      {
+        "typ": "regressschreiben",
+        "datum": "2025-03-01",
+        "sprache": "FR"
+      }
+    ]
+  },
+  {
+    "case_id": "W4",
+    "sprache": "FR",
+    "kanton": "GE",
+    "gericht": "Tribunal de première instance Genève",
+    "branche": "BRH",
+    "cluster": "Wasser/Abdichtung – Notausgang Tiefgarage",
+    "parteien": {
+      "vn": "Sonni  SA",
+      "g01": "Famille Reppettez",
+      "anwalt_vn": "Me Delphine Clueso",
+      "anwalt_g01": "Me Paul Werrolli"
+    },
+    "sachverhalt": {
+      "kurz": "Wasser tritt bei Starkregen am Notausgang ein. VN sieht Planungsproblem, G01 verweist auf Ausführung.",
+      "zeitleiste": [
+        {
+          "t": "2024-02-28",
+          "event": "Schadenmeldung G01 an VN"
+        },
+        {
+          "t": "2024-03-05",
+          "event": "Stellungnahme VN: Planungszuständigkeit"
+        },
+        {
+          "t": "2024-04-02",
+          "event": "Haftpflichtversicherung schlägt gemeinsame Expertise vor"
+        },
+        {
+          "t": "2024-06-18",
+          "event": "Expertenbegehung"
+        },
+        {
+          "t": "2024-08-01",
+          "event": "Kurzbericht: Kleinmaßnahmen ausreichend"
+        },
+        {
+          "t": "2024-08-20",
+          "event": "Einigung per Saldo"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "SIA 118"
+      ],
+      "strittig": [
+        "Abgrenzung Planung/Ausführung"
+      ],
+      "deckung": [
+        "Kleiner Mangelfolgeschaden gedeckt"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 18000,
+      "erwartete_spanne": {
+        "min": 8000,
+        "max": 20000
+      },
+      "sb": 1000,
+      "pe_logic": "PE steht Haftpflichtversicherung zu"
+    },
+    "status": "vergleich",
+    "dokument_plan": [
+      {
+        "typ": "schadenanmeldung",
+        "datum": "2024-02-28",
+        "sprache": "FR"
+      },
+      {
+        "typ": "stellungnahme_vn",
+        "datum": "2024-03-05",
+        "sprache": "FR"
+      },
+      {
+        "typ": "Haftpflichtversicherungschreiben_an_g01",
+        "datum": "2024-04-02",
+        "sprache": "FR"
+      },
+      {
+        "typ": "expertenauftrag",
+        "datum": "2024-06-10",
+        "sprache": "FR"
+      },
+      {
+        "typ": "expertenbericht",
+        "datum": "2024-08-01",
+        "sprache": "FR"
+      },
+      {
+        "typ": "vergleichsangebot",
+        "datum": "2024-08-10",
+        "sprache": "FR"
+      },
+      {
+        "typ": "ev_saldo",
+        "datum": "2024-08-20",
+        "sprache": "FR"
+      }
+    ]
+  },
+  {
+    "case_id": "W5",
+    "sprache": "FR",
+    "kanton": "VD",
+    "gericht": "Justice de paix Riviera–Pays-d’Enhaut",
+    "branche": "LUHBH",
+    "cluster": "Wasser/Abdichtung – Kellerraum Nachnutzung",
+    "parteien": {
+      "vn": "Ingenieur SA",
+      "g01": "Société Immobilière",
+      "anwalt_vn": "Me John-David Coronni",
+      "anwalt_g01": "Me Serge Lapalli"
+    },
+    "sachverhalt": {
+      "kurz": "Feuchtigkeit in nachträglich als Nutzraum verwendeten Kellern. VN verweist auf ursprünglich vorgesehenen Luftraum.",
+      "zeitleiste": [
+        {
+          "t": "2024-03-12",
+          "event": "Rüge G01"
+        },
+        {
+          "t": "2024-03-21",
+          "event": "Stellungnahme VN mit Geobericht"
+        },
+        {
+          "t": "2024-04-15",
+          "event": "Schlichtungsgesuch G01"
+        },
+        {
+          "t": "2024-05-02",
+          "event": "Sitzung: Nutzungsanpassung vereinbart"
+        },
+        {
+          "t": "2024-06-10",
+          "event": "Kleinere Abdichtungen ausgeführt"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "SIA 118"
+      ],
+      "strittig": [
+        "Zweckentfremdete Nutzung vs. Planvorgaben"
+      ],
+      "deckung": [
+        "Beratung, keine Haftpflichtleistung ausser Kleinmaßnahmen"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 15000,
+      "erwartete_spanne": {
+        "min": 0,
+        "max": 18000
+      },
+      "sb": 5000,
+      "pe_logic": "PE steht Haftpflichtversicherung zu"
+    },
+    "status": "schlichtung",
+    "dokument_plan": [
+      {
+        "typ": "schlichtungsgesuch",
+        "datum": "2024-04-15",
+        "sprache": "FR"
+      },
+      {
+        "typ": "Haftpflichtversicherungschreiben_an_g01",
+        "datum": "2024-04-25",
+        "sprache": "FR"
+      },
+      {
+        "typ": "stellungnahme_vn",
+        "datum": "2024-03-21",
+        "sprache": "FR"
+      },
+      {
+        "typ": "schlichtungsprotokoll",
+        "datum": "2024-05-02",
+        "sprache": "FR"
+      },
+      {
+        "typ": "abschlussnotiz",
+        "datum": "2024-06-15",
+        "sprache": "FR"
+      }
+    ]
+  },
+  {
+    "case_id": "F1",
+    "sprache": "FR",
+    "kanton": "FR",
+    "gericht": "Tribunal de la Sarine",
+    "branche": "LUHBH",
+    "cluster": "Fenster/Schiebefenster – Wärme/Stabilität",
+    "parteien": {
+      "vn": "Thermo GmbH",
+      "g01": "Madame Fippi",
+      "anwalt_vn": "Me Alain Ribordy",
+      "anwalt_g01": "Me Nicolas Clueso"
+    },
+    "sachverhalt": {
+      "kurz": "Großes Schiebefenster: Wärmeverluste und Schwingungen bei Wind. VN beruft sich auf SIA 380/1-konforme Berechnung.",
+      "zeitleiste": [
+        {
+          "t": "2023-12-18",
+          "event": "Rüge G01 an VN"
+        },
+        {
+          "t": "2024-01-08",
+          "event": "Stellungnahme VN: Planwerte eingehalten"
+        },
+        {
+          "t": "2024-02-12",
+          "event": "Haftpflichtversicherung fordert Substantiierung"
+        },
+        {
+          "t": "2024-03-20",
+          "event": "Gemeinsame Expertise vereinbart"
+        },
+        {
+          "t": "2024-05-05",
+          "event": "Expertise anbefiehlt Fensteraustausch"
+        },
+        {
+          "t": "2024-06-10",
+          "event": "Vergleich: Austausch + begrenzte Folgekosten"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "SIA 380/1",
+        "SIA 118"
+      ],
+      "strittig": [
+        "Unterdimensionierung vs. korrekte Planung",
+        "Umfang Folgekosten"
+      ],
+      "deckung": [
+        "Vermögensschaden Sublimit",
+        "Mangelfolgeschaden teilweise gedeckt"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 120000,
+      "erwartete_spanne": {
+        "min": 50000,
+        "max": 150000
+      },
+      "sb": 5000,
+      "pe_logic": "PE steht Haftpflichtversicherung zu"
+    },
+    "status": "vergleich",
+    "dokument_plan": [
+      {
+        "typ": "schadenanmeldung",
+        "datum": "2023-12-22",
+        "sprache": "FR"
+      },
+      {
+        "typ": "stellungnahme_vn",
+        "datum": "2024-01-08",
+        "sprache": "FR"
+      },
+      {
+        "typ": "Haftpflichtversicherungschreiben_an_g01",
+        "datum": "2024-02-12",
+        "sprache": "FR"
+      },
+      {
+        "typ": "expertenauftrag",
+        "datum": "2024-03-20",
+        "sprache": "FR"
+      },
+      {
+        "typ": "expertenbericht",
+        "datum": "2024-05-05",
+        "sprache": "FR"
+      },
+      {
+        "typ": "vergleichsangebot",
+        "datum": "2024-05-25",
+        "sprache": "FR"
+      },
+      {
+        "typ": "ev_saldo",
+        "datum": "2024-06-10",
+        "sprache": "FR"
+      }
+    ]
+  },
+  {
+    "case_id": "F2",
+    "sprache": "FR",
+    "kanton": "NE",
+    "gericht": "Tribunal régional du Littoral et Val-de-Travers",
+    "branche": "BRH",
+    "cluster": "Fenster/Platten – Bestellmengen/Bauleitung",
+    "parteien": {
+      "vn": "Architekten AG",
+      "g01": "Immobilier SA",
+      "anwalt_vn": "Me Delphine Wertz",
+      "anwalt_g01": "Me Miguel Pannello"
+    },
+    "sachverhalt": {
+      "kurz": "Vorwurf falscher Bestellmengen und ungenügender Begleitung der Plattenarbeiten. Bauherr hat direkt Bestellungen und Änderungen veranlasst.",
+      "zeitleiste": [
+        {
+          "t": "2023-07-31",
+          "event": "Widerklage Bauherr mit Streitverkündung gegen VN"
+        },
+        {
+          "t": "2023-12-13",
+          "event": "Gerichtsverfügung: Streitverkündung zugelassen"
+        },
+        {
+          "t": "2024-01-10",
+          "event": "Stellungnahme VN"
+        },
+        {
+          "t": "2024-04-15",
+          "event": "Mediationsversuch scheitert"
+        },
+        {
+          "t": "2024-06-20",
+          "event": "Vergleich in Schlichtung"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "SIA 118"
+      ],
+      "strittig": [
+        "Koordinationspflichten Bauleitung",
+        "Änderungen durch Bauherr"
+      ],
+      "deckung": [
+        "Vermögensschaden gedeckt (Sublimit)",
+        "Konventionalstrafen ausgeschlossen"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 98000,
+      "erwartete_spanne": {
+        "min": 30000,
+        "max": 100000
+      },
+      "sb": 5000,
+      "pe_logic": "PE steht Haftpflichtversicherung zu"
+    },
+    "status": "vergleich",
+    "dokument_plan": [
+      {
+        "typ": "prozessmeldung_intern",
+        "datum": "2023-12-13",
+        "sprache": "FR"
+      },
+      {
+        "typ": "stellungnahme_vn",
+        "datum": "2024-01-10",
+        "sprache": "FR"
+      },
+      {
+        "typ": "Haftpflichtversicherungschreiben_an_g01",
+        "datum": "2024-02-01",
+        "sprache": "FR"
+      },
+      {
+        "typ": "schlichtungsgesuch",
+        "datum": "2024-05-25",
+        "sprache": "FR"
+      },
+      {
+        "typ": "schlichtungsprotokoll",
+        "datum": "2024-06-20",
+        "sprache": "FR"
+      },
+      {
+        "typ": "ev_saldo",
+        "datum": "2024-06-22",
+        "sprache": "FR"
+      }
+    ]
+  },
+  {
+    "case_id": "H1",
+    "sprache": "FR",
+    "kanton": "VD",
+    "gericht": "Justice de paix Broye-Vully",
+    "branche": "LUHBH",
+    "cluster": "HLKS/Kälte – Unterdimensionierung behauptet",
+    "parteien": {
+      "vn": "Beispiel SA",
+      "g01": "Medizinisches Zentrum AG",
+      "anwalt_vn": "Me Vincent Reppettez",
+      "anwalt_g01": "Me Serge Luppi"
+    },
+    "sachverhalt": {
+      "kurz": "Kühlleistung ungenügend. VN verweist auf vertragliche Vorgaben und mangelhaften Unterhalt durch Betreiber.",
+      "zeitleiste": [
+        {
+          "t": "2024-04-10",
+          "event": "Anwalt G01 wirft Unterdimensionierung vor"
+        },
+        {
+          "t": "2024-04-16",
+          "event": "Haftpflichtversicherung lehnt Haftung vorläufig ab, verlangt Substantiierung"
+        },
+        {
+          "t": "2024-05-21",
+          "event": "Gesuch vBO gestellt"
+        },
+        {
+          "t": "2024-07-08",
+          "event": "Expertenvorschlag & Fragenkatalog"
+        },
+        {
+          "t": "2024-09-25",
+          "event": "Gerichtsexpertise: Regelung anpassen, Zusatzkühler empfohlen"
+        },
+        {
+          "t": "2024-10-20",
+          "event": "Vergleich abgeschlossen"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "SIA 382/1",
+        "SIA 118",
+        "ZPO 158"
+      ],
+      "strittig": [
+        "Dimensionierung vs. Nutzlasten",
+        "Unterhaltspflichten Betreiber"
+      ],
+      "deckung": [
+        "Berufshaftpflicht: Vermögensschaden Sublimit",
+        "Sachschaden gering"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 140000,
+      "erwartete_spanne": {
+        "min": 50000,
+        "max": 170000
+      },
+      "sb": 5000,
+      "pe_logic": "PE steht Haftpflichtversicherung zu"
+    },
+    "status": "vergleich",
+    "dokument_plan": [
+      {
+        "typ": "Haftpflichtversicherungschreiben_an_g01",
+        "datum": "2024-04-16",
+        "sprache": "FR"
+      },
+      {
+        "typ": "gesuch_vbo",
+        "datum": "2024-05-21",
+        "sprache": "FR"
+      },
+      {
+        "typ": "expertenauftrag",
+        "datum": "2024-07-08",
+        "sprache": "FR"
+      },
+      {
+        "typ": "gerichtsexpertise",
+        "datum": "2024-09-25",
+        "sprache": "FR"
+      },
+      {
+        "typ": "vergleichsangebot",
+        "datum": "2024-10-05",
+        "sprache": "FR"
+      },
+      {
+        "typ": "ev_saldo",
+        "datum": "2024-10-20",
+        "sprache": "FR"
+      }
+    ]
+  },
+  {
+    "case_id": "H2",
+    "sprache": "DE",
+    "kanton": "BE",
+    "gericht": "Handelsgericht Bern",
+    "branche": "BRH",
+    "cluster": "HLKS/Kälte – Laborgebäude, Wechselrichter/Überdimensionierung (Prozess)",
+    "parteien": {
+      "vn": "Totalunternehmung AG",
+      "g01": "Kantonales Bauamt",
+      "anwalt_vn": "RA Anwaltsmann",
+      "anwalt_g01": "RA Anwaltsfrau"
+    },
+    "sachverhalt": {
+      "kurz": "Störung Kälteerzeugung. Gutachten nennt mögliche Konstruktionsfehler (Wechselrichter) oder Überdimensionierung.",
+      "zeitleiste": [
+        {
+          "t": "2021-11-09",
+          "event": "Schiedsgutachten liegt vor"
+        },
+        {
+          "t": "2021-11-17",
+          "event": "Mängelrüge G01"
+        },
+        {
+          "t": "2023-08-15",
+          "event": "Klage eingereicht"
+        },
+        {
+          "t": "2023-12-22",
+          "event": "Klageantwort VN"
+        },
+        {
+          "t": "2024-05-30",
+          "event": "Zwischenverfügung: Streitverkündung Subplaner zugelassen"
+        },
+        {
+          "t": "2025-01-20",
+          "event": "Vergleichsvorschlag scheitert"
+        },
+        {
+          "t": "2025-06-05",
+          "event": "Gerichtsexpertise ergänzt"
+        },
+        {
+          "t": "2025-10-01",
+          "event": "Urteil: Teilerfolg G01, anteilige Haftung VN/Subplaner"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "SIA 118",
+        "OR 371"
+      ],
+      "strittig": [
+        "Konstruktionsfehler vs. Betriebsfehler",
+        "Umfang Folgekosten"
+      ],
+      "deckung": [
+        "Teils Sach- teils Vermögensschaden gedeckt",
+        "Regress gegen Subplaner"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 2836548,
+      "erwartete_spanne": {
+        "min": 600000,
+        "max": 1200000
+      },
+      "sb": 10000,
+      "pe_logic": "PE steht Haftpflichtversicherung zu"
+    },
+    "status": "prozess",
+    "dokument_plan": [
+      {
+        "typ": "schadenanmeldung",
+        "datum": "2023-10-09",
+        "sprache": "DE"
+      },
+      {
+        "typ": "prozessmeldung_intern",
+        "datum": "2023-10-13",
+        "sprache": "DE"
+      },
+      {
+        "typ": "klage",
+        "datum": "2023-08-15",
+        "sprache": "DE"
+      },
+      {
+        "typ": "klageantwort",
+        "datum": "2023-12-22",
+        "sprache": "DE"
+      },
+      {
+        "typ": "streitverkuendung",
+        "datum": "2024-05-30",
+        "sprache": "DE"
+      },
+      {
+        "typ": "gerichtsexpertise",
+        "datum": "2025-06-05",
+        "sprache": "DE"
+      },
+      {
+        "typ": "urteilsauszug",
+        "datum": "2025-10-01",
+        "sprache": "DE"
+      }
+    ]
+  },
+  {
+    "case_id": "H3",
+    "sprache": "DE",
+    "kanton": "ZH",
+    "gericht": "Bezirksgericht Zürich",
+    "branche": "LUHBH",
+    "cluster": "HLKS/Kälte – Lüftung unterperformt (Prozess)",
+    "parteien": {
+      "vn": "VN GmbH",
+      "g01": "Immobilien AG",
+      "anwalt_vn": "RA Anwaltsmann",
+      "anwalt_g01": "RA Ruth Metzler"
+    },
+    "sachverhalt": {
+      "kurz": "Unzureichender Luftwechsel, Beschwerden der Nutzer. VN beruft sich auf vorgegebene Lasten und Unterhalt.",
+      "zeitleiste": [
+        {
+          "t": "2024-02-25",
+          "event": "Rüge G01"
+        },
+        {
+          "t": "2024-03-12",
+          "event": "Gesuch vBO"
+        },
+        {
+          "t": "2024-05-10",
+          "event": "Experteneinsetzung"
+        },
+        {
+          "t": "2024-09-18",
+          "event": "Gerichtsexpertise: Maßnahmenpaket vorgeschlagen"
+        },
+        {
+          "t": "2025-01-12",
+          "event": "Vergleich vor Urteil: technische Maßnahmen, Kostenteilung"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "SIA 382/1",
+        "ZPO 158"
+      ],
+      "strittig": [
+        "Dimensionierung vs. Wartung",
+        "Kostenaufteilung Maßnahmen"
+      ],
+      "deckung": [
+        "Berufshaftpflicht: Vermögensschaden Sublimit"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 250000,
+      "erwartete_spanne": {
+        "min": 60000,
+        "max": 150000
+      },
+      "sb": 5000,
+      "pe_logic": "PE steht Haftpflichtversicherung zu"
+    },
+    "status": "prozess",
+    "dokument_plan": [
+      {
+        "typ": "schadenanmeldung",
+        "datum": "2024-03-01",
+        "sprache": "DE"
+      },
+      {
+        "typ": "gesuch_vbo",
+        "datum": "2024-03-12",
+        "sprache": "DE"
+      },
+      {
+        "typ": "expertenauftrag",
+        "datum": "2024-05-10",
+        "sprache": "DE"
+      },
+      {
+        "typ": "gerichtsexpertise",
+        "datum": "2024-09-18",
+        "sprache": "DE"
+      },
+      {
+        "typ": "vergleichsangebot",
+        "datum": "2025-01-05",
+        "sprache": "DE"
+      },
+      {
+        "typ": "ev_saldo",
+        "datum": "2025-01-12",
+        "sprache": "DE"
+      }
+    ]
+  },
+  {
+    "case_id": "FA1",
+    "sprache": "DE",
+    "kanton": "BE",
+    "gericht": "Schlichtungsbehörde Bern-Mittelland",
+    "branche": "LUHBH",
+    "cluster": "Fassade/Algen – Vergabe/Fungizid/Unterhalt",
+    "parteien": {
+      "vn": "Irgendeine GmbH",
+      "g01": "STWEG",
+      "anwalt_vn": "RAin Anwaltsfrau",
+      "anwalt_g01": "RA Anwaltsmann"
+    },
+    "sachverhalt": {
+      "kurz": "Punktueller Algenbewuchs nach Sanierung. Vorwurf: unzureichender Vergabehinweis zur Offerte ohne separaten Fungizidauftrag.",
+      "zeitleiste": [
+        {
+          "t": "2024-09-14",
+          "event": "Mängelrüge STWEG"
+        },
+        {
+          "t": "2024-09-17",
+          "event": "Ablehnung VN: Unterhaltspflichten"
+        },
+        {
+          "t": "2025-07-04",
+          "event": "Schlichtung: Vergleich CHF 23500 unter Widerrufsvorbehalt"
+        },
+        {
+          "t": "2025-07-11",
+          "event": "Widerruf durch Haftpflichtversicherung, Folgevergleich: CHF 5000 Pauschale"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "SIA 118"
+      ],
+      "strittig": [
+        "Vergabehinweisumfang",
+        "Pflege/Unterhalt der Fassade"
+      ],
+      "deckung": [
+        "Kleiner Vermögensschaden möglich",
+        "Sachschaden gering"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 34513,
+      "erwartete_spanne": {
+        "min": 5000,
+        "max": 25000
+      },
+      "sb": 2000,
+      "pe_logic": "PE steht Haftpflichtversicherung zu"
+    },
+    "status": "vergleich",
+    "dokument_plan": [
+      {
+        "typ": "schlichtungsgesuch",
+        "datum": "2025-06-13",
+        "sprache": "DE"
+      },
+      {
+        "typ": "schlichtungsprotokoll",
+        "datum": "2025-07-04",
+        "sprache": "DE"
+      },
+      {
+        "typ": "widerrufsschreiben",
+        "datum": "2025-07-11",
+        "sprache": "DE"
+      },
+      {
+        "typ": "vergleichsangebot",
+        "datum": "2025-07-15",
+        "sprache": "DE"
+      },
+      {
+        "typ": "ev_saldo",
+        "datum": "2025-07-20",
+        "sprache": "DE"
+      }
+    ]
+  },
+  {
+    "case_id": "FA2",
+    "sprache": "DE",
+    "kanton": "SO",
+    "gericht": "Friedensrichteramt Dorneck-Thierstein",
+    "branche": "BRH",
+    "cluster": "Fassade/Algen – Bepflanzung/Unterhalt",
+    "parteien": {
+      "vn": "Maler AG",
+      "g01": "Eigentümerin Reppelle",
+      "anwalt_vn": "RA Samuel Hatschi",
+      "anwalt_g01": "RAin Ruth Relli"
+    },
+    "sachverhalt": {
+      "kurz": "Oberflächlicher Bewuchs durch nahe Bepflanzung. Keine Durchfeuchtung, Reinigungsbedarf.",
+      "zeitleiste": [
+        {
+          "t": "2024-04-10",
+          "event": "Reklamation Eigentümerin"
+        },
+        {
+          "t": "2024-04-20",
+          "event": "Gemeinsame Begehung"
+        },
+        {
+          "t": "2024-05-05",
+          "event": "Vorschlag Reinigung & Entkeimung"
+        },
+        {
+          "t": "2024-06-01",
+          "event": "Einigung ohne Prozess"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "SIA 118"
+      ],
+      "strittig": [
+        "Unterhaltspflichten Eigentümerin"
+      ],
+      "deckung": [
+        "Keine Leistung notwendig"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 6000,
+      "erwartete_spanne": {
+        "min": 0,
+        "max": 6000
+      },
+      "sb": 1000,
+      "pe_logic": "PE steht Haftpflichtversicherung zu"
+    },
+    "status": "vergleich",
+    "dokument_plan": [
+      {
+        "typ": "schadenanmeldung",
+        "datum": "2024-04-10",
+        "sprache": "DE"
+      },
+      {
+        "typ": "Haftpflichtversicherungbesichtigung_protokoll",
+        "datum": "2024-04-20",
+        "sprache": "DE"
+      },
+      {
+        "typ": "sanierungskonzept",
+        "datum": "2024-05-05",
+        "sprache": "DE"
+      },
+      {
+        "typ": "ev_saldo",
+        "datum": "2024-06-01",
+        "sprache": "DE"
+      }
+    ]
+  },
+  {
+    "case_id": "G1",
+    "sprache": "DE",
+    "kanton": "AG",
+    "gericht": "Bezirksgericht Lenzburg",
+    "branche": "LUHBH",
+    "cluster": "Geotechnik/Risse – Holzunterkonstruktion/Fensterbefestigungen",
+    "parteien": {
+      "vn": "Bauleitung GmbH",
+      "g01": "Herr Markus Müller",
+      "anwalt_vn": "RA Christoph Lütti",
+      "anwalt_g01": "RA Matthias Lolli"
+    },
+    "sachverhalt": {
+      "kurz": "Risse und Feuchtigkeit im Sockel, problematische Fensterbefestigungen. Vorwurf Detailplanung mangelhaft.",
+      "zeitleiste": [
+        {
+          "t": "2023-09-21",
+          "event": "Gesuch vBO gegen mehrere Beteiligte"
+        },
+        {
+          "t": "2023-11-02",
+          "event": "Fragenkatalog und Expertenvorschlag"
+        },
+        {
+          "t": "2024-03-12",
+          "event": "Expertise: geteilte Verantwortung (Holzbau/Fensterbauer)"
+        },
+        {
+          "t": "2024-05-20",
+          "event": "Vergleich unter Mithaftungsquoten"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "ZPO 158",
+        "SIA 118"
+      ],
+      "strittig": [
+        "Detailplanung vs. Ausführung",
+        "Mithaftung Unternehmer"
+      ],
+      "deckung": [
+        "Sachschaden gedeckt anteilig"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 175000,
+      "erwartete_spanne": {
+        "min": 60000,
+        "max": 120000
+      },
+      "sb": 5000,
+      "pe_logic": "PE steht Haftpflichtversicherung zu"
+    },
+    "status": "vergleich",
+    "dokument_plan": [
+      {
+        "typ": "gesuch_vbo",
+        "datum": "2023-09-21",
+        "sprache": "DE"
+      },
+      {
+        "typ": "prozessmeldung_intern",
+        "datum": "2023-09-25",
+        "sprache": "DE"
+      },
+      {
+        "typ": "expertenauftrag",
+        "datum": "2023-11-02",
+        "sprache": "DE"
+      },
+      {
+        "typ": "gerichtsexpertise",
+        "datum": "2024-03-12",
+        "sprache": "DE"
+      },
+      {
+        "typ": "vergleichsangebot",
+        "datum": "2024-05-05",
+        "sprache": "DE"
+      },
+      {
+        "typ": "ev_saldo",
+        "datum": "2024-05-20",
+        "sprache": "DE"
+      }
+    ]
+  },
+  {
+    "case_id": "G2",
+    "sprache": "FR",
+    "kanton": "VS",
+    "gericht": "Tribunal arbitral SIA 150",
+    "branche": "LUHBH",
+    "cluster": "Geotechnik/Reservoir/Deich – Kostenvoranschlag-Überzug (Prozess)",
+    "parteien": {
+      "vn": "Geotech SA",
+      "g01": "Consortium",
+      "anwalt_vn": "Me Julien Rulli",
+      "anwalt_g01": "Me Stéphane Welli"
+    },
+    "sachverhalt": {
+      "kurz": "Mehrkosten bei Deicharbeiten, Vorwurf an Stabilitätsprüfungen. VN bestreitet Planungsfehler.",
+      "zeitleiste": [
+        {
+          "t": "2023-08-26",
+          "event": "Arbitre aufgenommen"
+        },
+        {
+          "t": "2024-02-10",
+          "event": "Zusammenführung Honorar/Widerklage"
+        },
+        {
+          "t": "2025-04-15",
+          "event": "Zwischenbericht Arbitre"
+        },
+        {
+          "t": "2025-12-01",
+          "event": "Schiedsspruch: überwiegende Abweisung Widerklage"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "SIA 150",
+        "SIA 118"
+      ],
+      "strittig": [
+        "Kostenvoranschlag vs. Planungsfehler",
+        "Dringliche Feststellung Stabilität"
+      ],
+      "deckung": [
+        "Berufshaftpflicht: keine Leistung, nur Kostenakonto"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 600000,
+      "erwartete_spanne": {
+        "min": 0,
+        "max": 120000
+      },
+      "sb": 5000,
+      "pe_logic": "PE steht Haftpflichtversicherung zu"
+    },
+    "status": "prozess",
+    "dokument_plan": [
+      {
+        "typ": "prozessmeldung_intern",
+        "datum": "2023-08-30",
+        "sprache": "FR"
+      },
+      {
+        "typ": "stellungnahme_vn",
+        "datum": "2024-03-01",
+        "sprache": "FR"
+      },
+      {
+        "typ": "arbitre_verfuegung",
+        "datum": "2025-04-15",
+        "sprache": "FR"
+      },
+      {
+        "typ": "schiedsspruch",
+        "datum": "2025-12-01",
+        "sprache": "FR"
+      }
+    ]
+  },
+  {
+    "case_id": "B1",
+    "sprache": "FR",
+    "kanton": "GE",
+    "gericht": "Tribunal de première instance Genève",
+    "branche": "BG",
+    "cluster": "Garantie – Zahlungssperre/Verbotsverfahren",
+    "parteien": {
+      "vn": "Bau AG",
+      "g01": "Begünstigte: Bumpi SA",
+      "anwalt_vn": "Me Joël Rulli",
+      "anwalt_g01": "Me Anne Annoni"
+    },
+    "sachverhalt": {
+      "kurz": "Verbotsgesuch gegen Garantiezahlung (1.2 Mio CHF). Haftpflichtversicherung als Garantin, Abruf rechtzeitig/formgerecht.",
+      "zeitleiste": [
+        {
+          "t": "2025-09-09",
+          "event": "Abruf durch Begünstigte"
+        },
+        {
+          "t": "2025-09-17",
+          "event": "Gesuch um superprovisorisches Verbot"
+        },
+        {
+          "t": "2025-09-18",
+          "event": "Ablehnung durch Gericht"
+        },
+        {
+          "t": "2025-11-10",
+          "event": "Verhandlung Vorsorgliche Maßnahmen"
+        },
+        {
+          "t": "2026-01-15",
+          "event": "Haftpflichtversicherung zahlt, leitet Rückforderung ein"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "OR 78 analog (Form)",
+        "Europäisches Abkommen (Abruf) – Kontext"
+      ],
+      "strittig": [
+        "Rechtzeitigkeit/Form",
+        "Missbräuchlichkeit"
+      ],
+      "deckung": [
+        "Garantieverhältnis separat, Regress gegen VN/Garanten"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 1200000,
+      "erwartete_spanne": {
+        "min": 540000,
+        "max": 1200000
+      },
+      "sb": 0,
+      "pe_logic": "PE nicht relevant"
+    },
+    "status": "schlichtung",
+    "dokument_plan": [
+      {
+        "typ": "verbotsgesuch",
+        "datum": "2025-09-17",
+        "sprache": "FR"
+      },
+      {
+        "typ": "gericht_verfuegung",
+        "datum": "2025-09-18",
+        "sprache": "FR"
+      },
+      {
+        "typ": "verhandlung_protokoll",
+        "datum": "2025-11-10",
+        "sprache": "FR"
+      },
+      {
+        "typ": "Haftpflichtversicherungschreiben_regress",
+        "datum": "2026-01-15",
+        "sprache": "FR"
+      }
+    ]
+  },
+  {
+    "case_id": "B2",
+    "sprache": "DE",
+    "kanton": "ZH",
+    "gericht": "Friedensrichteramt Winterthur",
+    "branche": "BG",
+    "cluster": "Garantie – Rückforderung gegen Garanten (Schlichtung)",
+    "parteien": {
+      "vn": "Garantien GmbH",
+      "g01": "Haftpflichtversicherung Versicherungen AG (Regress)",
+      "anwalt_vn": "RA Hans-Ueli Zuffi",
+      "anwalt_g01": "RA Raphael Keller"
+    },
+    "sachverhalt": {
+      "kurz": "Rückforderung aus ausbezahltem Garantieschein; Schlichtungsvergleich mit Ratenplan.",
+      "zeitleiste": [
+        {
+          "t": "2025-02-10",
+          "event": "Schlichtungsverhandlung"
+        },
+        {
+          "t": "2025-02-12",
+          "event": "Klage vorbereitet (Nachklagevorbehalt)"
+        },
+        {
+          "t": "2025-03-01",
+          "event": "Vergleich: Raten bis Ende 2026"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "AVB Garantie",
+        "Gerichtsstand Winterthur (Garantieversprechen)"
+      ],
+      "strittig": [
+        "Solidarität der Garanten",
+        "Ratenplanbedingungen"
+      ],
+      "deckung": [
+        "Nicht anwendbar (Haftpflichtversicherung als Klägerin)"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 540000,
+      "erwartete_spanne": {
+        "min": 300000,
+        "max": 540000
+      },
+      "sb": 0,
+      "pe_logic": "PE nicht relevant"
+    },
+    "status": "vergleich",
+    "dokument_plan": [
+      {
+        "typ": "schlichtungsprotokoll",
+        "datum": "2025-02-10",
+        "sprache": "DE"
+      },
+      {
+        "typ": "vergleichsangebot",
+        "datum": "2025-02-11",
+        "sprache": "DE"
+      },
+      {
+        "typ": "ev_saldo",
+        "datum": "2025-03-01",
+        "sprache": "DE"
+      }
+    ]
+  },
+  {
+    "case_id": "B3",
+    "sprache": "FR",
+    "kanton": "GE",
+    "gericht": "Tribunal de commerce Genève",
+    "branche": "BG",
+    "cluster": "Garantie – Auslandsbezug, Abruf formal korrekt",
+    "parteien": {
+      "vn": "Weristdas SA",
+      "g01": "Société de la Santé",
+      "anwalt_vn": "Me Vincent Velli",
+      "anwalt_g01": "Me Margerie Muelli"
+    },
+    "sachverhalt": {
+      "kurz": "Abstrakte Garantie abgerufen; Haftpflichtversicherung prüft Missbrauch, findet keinen. Rückforderung fokussiert.",
+      "zeitleiste": [
+        {
+          "t": "2024-09-02",
+          "event": "Abruf eingegangen"
+        },
+        {
+          "t": "2025-05-05",
+          "event": "Schlichtungstermin angesetzt"
+        },
+        {
+          "t": "2025-05-10",
+          "event": "Haftpflichtversicherung meldet Vertretung, nimmt nicht teil"
+        },
+        {
+          "t": "2025-06-20",
+          "event": "Klagebewilligung erteilt"
+        },
+        {
+          "t": "2025-09-01",
+          "event": "Außergerichtliche Einigung Teilzahlung"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "nZPO 209 Abs. 4 (Schlichtungsteilnahme)",
+        "Formale Abrufregeln"
+      ],
+      "strittig": [
+        "Missbrauchsprüfung",
+        "Parteientschädigung vBO"
+      ],
+      "deckung": [
+        "Nicht anwendbar, Haftpflichtversicherung als Garantin"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 634409,
+      "erwartete_spanne": {
+        "min": 150000,
+        "max": 450000
+      },
+      "sb": 0,
+      "pe_logic": "PE nicht relevant"
+    },
+    "status": "vergleich",
+    "dokument_plan": [
+      {
+        "typ": "schlichtungsgesuch",
+        "datum": "2025-02-19",
+        "sprache": "FR"
+      },
+      {
+        "typ": "Haftpflichtversicherungschreiben_vertretung",
+        "datum": "2025-05-01",
+        "sprache": "FR"
+      },
+      {
+        "typ": "schlichtungsprotokoll",
+        "datum": "2025-05-05",
+        "sprache": "FR"
+      },
+      {
+        "typ": "ev_saldo",
+        "datum": "2025-09-01",
+        "sprache": "FR"
+      }
+    ]
+  },
+  {
+    "case_id": "M1",
+    "sprache": "DE",
+    "kanton": "ZH",
+    "gericht": "Friedensrichteramt Maur",
+    "branche": "MFFNH",
+    "cluster": "Flotte/Arbeitsmotorwagen – Glasfaserkabel beschädigt",
+    "parteien": {
+      "vn": "Bau AG",
+      "g01": "GGA Wele",
+      "anwalt_vn": "RA Oliver Tschoppi",
+      "anwalt_g01": "RA Claudio Colli"
+    },
+    "sachverhalt": {
+      "kurz": "Bagger beschädigt Glasfaserkabel beim Randsteinabbruch. Diskussion über Verlegetiefe/Markierung/Sondierung.",
+      "zeitleiste": [
+        {
+          "t": "2024-02-01",
+          "event": "Schadenereignis"
+        },
+        {
+          "t": "2024-02-15",
+          "event": "Forderung GGA CHF 40498.10"
+        },
+        {
+          "t": "2024-05-06",
+          "event": "Vorladung Schlichtung"
+        },
+        {
+          "t": "2025-05-19",
+          "event": "VN-Feedback: Leitung nur 19 cm tief, nicht markiert"
+        },
+        {
+          "t": "2025-06-03",
+          "event": "Schlichtung: Risikoauskauf CHF 15000"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "LEV Art. 68",
+        "OR 55"
+      ],
+      "strittig": [
+        "Exkulpationsbeweis",
+        "Mitverschulden Werkleitung"
+      ],
+      "deckung": [
+        "Haftpflicht Flotte: gedeckt, Ausschluss Bearbeitungsteile beachten"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 40498,
+      "erwartete_spanne": {
+        "min": 10000,
+        "max": 20000
+      },
+      "sb": 5000,
+      "pe_logic": "PE steht Haftpflichtversicherung zu"
+    },
+    "status": "vergleich",
+    "dokument_plan": [
+      {
+        "typ": "schadenanmeldung",
+        "datum": "2024-02-10",
+        "sprache": "DE"
+      },
+      {
+        "typ": "Haftpflichtversicherungschreiben_an_g01",
+        "datum": "2024-03-01",
+        "sprache": "DE"
+      },
+      {
+        "typ": "schlichtungsvorladung",
+        "datum": "2024-05-06",
+        "sprache": "DE"
+      },
+      {
+        "typ": "vergleichsangebot",
+        "datum": "2025-06-01",
+        "sprache": "DE"
+      },
+      {
+        "typ": "ev_saldo",
+        "datum": "2025-06-03",
+        "sprache": "DE"
+      }
+    ]
+  },
+  {
+    "case_id": "P1",
+    "sprache": "DE",
+    "kanton": "ZH",
+    "gericht": "Friedensrichteramt Winterthur",
+    "branche": "HAPH",
+    "cluster": "Privat-Haftpflicht – Mieterschaden",
+    "parteien": {
+      "vn": "Privatperson: Ruth Müngel",
+      "g01": "Vermieterin",
+      "anwalt_vn": "RA Peter Mänder",
+      "anwalt_g01": "RAin Christina Crulli"
+    },
+    "sachverhalt": {
+      "kurz": "Ende Mietverhältnis: behauptete Schäden Küche/Plättli/Türen. Belege spärlich, Amortisationsfrage.",
+      "zeitleiste": [
+        {
+          "t": "2025-06-16",
+          "event": "Schlichtungsgesuch G01"
+        },
+        {
+          "t": "2025-07-04",
+          "event": "Haftpflichtversicherung bietet CHF 3000 ohne RP – abgelehnt"
+        },
+        {
+          "t": "2025-07-17",
+          "event": "Gegenvorschlag CHF 4000 – Haftpflichtversicherung bietet CHF 1000"
+        },
+        {
+          "t": "2025-07-21",
+          "event": "Schlichtung: Vergleich CHF 1000 + halbe Gerichtskosten"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "revVVG Art. 60 (Direktforderung Kontext)"
+      ],
+      "strittig": [
+        "Belege und Amortisation"
+      ],
+      "deckung": [
+        "Privat-HP: gedeckt, kleiner Betrag"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 5427,
+      "erwartete_spanne": {
+        "min": 1000,
+        "max": 3000
+      },
+      "sb": 0,
+      "pe_logic": "PE nicht relevant"
+    },
+    "status": "vergleich",
+    "dokument_plan": [
+      {
+        "typ": "schlichtungsvorladung",
+        "datum": "2025-06-16",
+        "sprache": "DE"
+      },
+      {
+        "typ": "vergleichsangebot",
+        "datum": "2025-07-04",
+        "sprache": "DE"
+      },
+      {
+        "typ": "ev_saldo",
+        "datum": "2025-07-21",
+        "sprache": "DE"
+      }
+    ]
+  },
+  {
+    "case_id": "BL1",
+    "sprache": "DE",
+    "kanton": "LU",
+    "gericht": "Friedensrichteramt Luzern",
+    "branche": "BRH",
+    "cluster": "Bauleitung/Platten – Mengenfehler/Änderungen",
+    "parteien": {
+      "vn": "Architektur AG",
+      "g01": "Ehepaar Müller",
+      "anwalt_vn": "RA Peter Pepper",
+      "anwalt_g01": "RAin Christina Chriese"
+    },
+    "sachverhalt": {
+      "kurz": "Bauherr fordert Mehrkosten und Verzugsschaden. VN verweist auf direkte Bestellungen und Änderungsflut durch Bauherr.",
+      "zeitleiste": [
+        {
+          "t": "2025-04-07",
+          "event": "Schlichtungsgesuch Bauherr"
+        },
+        {
+          "t": "2025-05-15",
+          "event": "Schlichtungstermin – kein Vergleich"
+        },
+        {
+          "t": "2025-06-10",
+          "event": "Mediation gescheitert"
+        },
+        {
+          "t": "2025-07-20",
+          "event": "Vergleich: Bauherr trägt Änderungsmehrmengen, keine Konventionalstrafe"
+        }
+      ]
+    },
+    "recht": {
+      "normen": [
+        "SIA 102 (Architekturvertrag)",
+        "SIA 118"
+      ],
+      "strittig": [
+        "Pflichten Bauleitung vs. Bauherr"
+      ],
+      "deckung": [
+        "Vermögensschaden gedeckt in Sublimit, Konventionalstrafen ausgeschlossen"
+      ]
+    },
+    "betraege": {
+      "forderung_brutto": 437000,
+      "erwartete_spanne": {
+        "min": 60000,
+        "max": 120000
+      },
+      "sb": 5000,
+      "pe_logic": "PE steht Haftpflichtversicherung zu"
+    },
+    "status": "vergleich",
+    "dokument_plan": [
+      {
+        "typ": "schlichtungsvorladung",
+        "datum": "2025-04-16",
+        "sprache": "DE"
+      },
+      {
+        "typ": "schlichtungsprotokoll",
+        "datum": "2025-05-15",
+        "sprache": "DE"
+      },
+      {
+        "typ": "mediationsnotiz",
+        "datum": "2025-06-10",
+        "sprache": "DE"
+      },
+      {
+        "typ": "vergleichsangebot",
+        "datum": "2025-07-10",
+        "sprache": "DE"
+      },
+      {
+        "typ": "ev_saldo",
+        "datum": "2025-07-20",
+        "sprache": "DE"
+      }
+    ]
+  }
+]

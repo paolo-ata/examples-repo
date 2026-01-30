@@ -1,0 +1,8 @@
+output/
+progress.json
+.env
+__pycache__/
+*.pyc
+eigene/
+CLAUDE.md
+
