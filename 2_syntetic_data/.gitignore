@@ -5,4 +5,5 @@ __pycache__/
 *.pyc
 eigene/
 CLAUDE.md
+data/
 
