@@ -6,6 +6,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).parent
 DATA_PATH = BASE_DIR / ".." / "2_syntetic_data" / "output"
 CHROMA_PATH = BASE_DIR / ".." / "4_rag" / "chroma_db"
+SQLITE_PATH = BASE_DIR / "cases.db"
 
 # Modelle
 EMBEDDING_MODEL = "text-embedding-3-small"

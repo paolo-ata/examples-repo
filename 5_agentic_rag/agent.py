@@ -9,7 +9,7 @@ import asyncio
 from dotenv import load_dotenv
 from agents import Agent, run_demo_loop
 
-from tools import vector_search, get_case_overview, list_cases
+from tools import vector_search, get_case_overview, sql_query
 
 load_dotenv()
 
@@ -25,15 +25,21 @@ Wichtige Regeln:
 6. Wenn du nicht genug Information findest, sage das klar.
 
 Deine Tools:
-- vector_search: Für inhaltliche Suchen ("ähnliche Fälle", "SIA-Normen", etc.)
+- vector_search: Für inhaltliche/semantische Suchen ("ähnliche Fälle", "SIA-Normen", etc.)
 - get_case_overview: Für Details zu einem bestimmten Fall (Fall-ID nötig)
-- list_cases: Für Übersichten ("Wie viele Fälle?", "Welche Cluster?")
+- sql_query: Für strukturierte Analysen (Zählungen, Summen, Durchschnitte, Gruppierungen)
+
+Strategie:
+- Für "Wie viele?", "Durchschnitt?", "Welche Kantone?" → sql_query
+- Für "Gibt es ähnliche Fälle wie...?", "Was steht im Gutachten?" → vector_search
+- Für "Erzähl mir alles über Fall X" → get_case_overview
+- Für komplexe Fragen: Kombiniere mehrere Tools nacheinander
 """
 
 agent = Agent(
     name="Bauhaftpflicht Agent",
     instructions=INSTRUCTIONS,
-    tools=[vector_search, get_case_overview, list_cases],
+    tools=[vector_search, get_case_overview, sql_query],
 )
 
 

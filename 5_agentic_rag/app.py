@@ -6,7 +6,7 @@ import streamlit as st
 from dotenv import load_dotenv
 from agents import Agent, Runner
 
-from tools import vector_search, get_case_overview, list_cases
+from tools import vector_search, get_case_overview, sql_query
 
 load_dotenv()
 
@@ -18,9 +18,9 @@ st.caption("Der Agent entscheidet selbst, welche Tools er braucht.")
 # Sidebar: Info über die Tools
 st.sidebar.header("Agent-Tools")
 st.sidebar.markdown("""
-- **vector_search** — Semantische Suche
-- **get_case_overview** — Fall-Details laden
-- **list_cases** — Fälle auflisten/zählen
+- **vector_search** — Semantische Suche (ChromaDB)
+- **get_case_overview** — Fall-Details laden (JSON)
+- **sql_query** — Strukturierte Analysen (SQLite)
 """)
 
 st.sidebar.markdown("---")
@@ -30,6 +30,8 @@ st.sidebar.markdown("""
 - Was sind die Fakten zu Fall W3?
 - Vergleiche Fall W1 mit H2
 - Wie viele Fälle gibt es pro Cluster?
+- Durchschnittliche Forderung pro Kanton?
+- Welche Fälle sind noch im Prozess?
 """)
 
 # Agent erstellen
@@ -43,12 +45,23 @@ Wichtige Regeln:
 4. Antworte auf Deutsch.
 5. Wenn du Beträge nennst, nutze das Format 'CHF 50'000'.
 6. Wenn du nicht genug Information findest, sage das klar.
+
+Deine Tools:
+- vector_search: Für inhaltliche/semantische Suchen ("ähnliche Fälle", "SIA-Normen", etc.)
+- get_case_overview: Für Details zu einem bestimmten Fall (Fall-ID nötig)
+- sql_query: Für strukturierte Analysen (Zählungen, Summen, Durchschnitte, Gruppierungen)
+
+Strategie:
+- Für "Wie viele?", "Durchschnitt?", "Welche Kantone?" → sql_query
+- Für "Gibt es ähnliche Fälle wie...?", "Was steht im Gutachten?" → vector_search
+- Für "Erzähl mir alles über Fall X" → get_case_overview
+- Für komplexe Fragen: Kombiniere mehrere Tools nacheinander
 """
 
 agent = Agent(
     name="Bauhaftpflicht Agent",
     instructions=INSTRUCTIONS,
-    tools=[vector_search, get_case_overview, list_cases],
+    tools=[vector_search, get_case_overview, sql_query],
 )
 
 # Chat-History in Session State

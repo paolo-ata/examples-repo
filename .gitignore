@@ -10,6 +10,7 @@ printscreens/
 # Sensitive/generated data
 2_syntetic_data/output/
 4_rag/chroma_db/
+5_agentic_rag/cases.db
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

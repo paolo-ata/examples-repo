@@ -2,10 +2,15 @@
 
 Jedes Tool ist eine Funktion, die der Agent aufrufen kann.
 Der Agent sieht den Docstring und entscheidet selbst, wann er welches Tool nutzt.
+
+Architektur:
+- vector_search      → ChromaDB  (für inhaltliche/semantische Fragen)
+- get_case_overview   → JSON-Dateien (für Detail-Ansicht eines Falls)
+- sql_query          → SQLite    (für strukturierte Analysen, Zählungen, Vergleiche)
 """
 
 import json
-from pathlib import Path
+import sqlite3
 
 from dotenv import load_dotenv
 from langchain_chroma import Chroma
@@ -17,6 +22,7 @@ from config import (
     CHROMA_PATH,
     COLLECTION_NAME,
     DATA_PATH,
+    SQLITE_PATH,
     TOP_K,
 )
 
@@ -34,7 +40,7 @@ def _get_vectorstore() -> Chroma:
 
 
 # ---------------------------------------------------------------------------
-# Tool 1: Semantische Suche
+# Tool 1: Semantische Suche (ChromaDB)
 # ---------------------------------------------------------------------------
 @function_tool
 def vector_search(query: str, k: int = TOP_K, case_id: str = "") -> str:
@@ -76,14 +82,14 @@ def vector_search(query: str, k: int = TOP_K, case_id: str = "") -> str:
 
 
 # ---------------------------------------------------------------------------
-# Tool 2: Fall-Übersicht
+# Tool 2: Fall-Übersicht (JSON)
 # ---------------------------------------------------------------------------
 @function_tool
 def get_case_overview(case_id: str) -> str:
     """Lädt die Übersicht (case_bible.json) eines bestimmten Falls.
 
     Nutze dieses Tool, wenn du Details zu einem spezifischen Fall brauchst:
-    Beteiligte, Schadenssumme, Status, Cluster, Zeitraum usw.
+    Beteiligte, Schadenssumme, Status, Cluster, Zeitraum, Zeitleiste usw.
 
     Args:
         case_id: Die Fall-ID, z.B. "W1", "F2", "H3".
@@ -99,48 +105,67 @@ def get_case_overview(case_id: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Tool 3: Alle Fälle auflisten
+# Tool 3: SQL-Abfrage (SQLite)
 # ---------------------------------------------------------------------------
 @function_tool
-def list_cases(cluster: str = "") -> str:
-    """Listet alle verfügbaren Fälle auf, optional gefiltert nach Cluster.
+def sql_query(query: str) -> str:
+    """Führt eine SQL-Abfrage auf den strukturierten Fall-Metadaten aus.
 
-    Nutze dieses Tool für Übersichtsfragen wie:
-    "Wie viele Fälle gibt es?", "Welche Fälle gehören zum Cluster Wasser?"
+    Nutze dieses Tool für Zählungen, Summen, Durchschnitte, Gruppierungen
+    und strukturierte Filter. NICHT für inhaltliche Fragen — dafür nutze
+    vector_search.
+
+    Verfügbare Tabellen und Spalten:
+
+    Tabelle 'cases':
+        case_id, sprache, kanton, gericht, branche, cluster,
+        vn (Versicherungsnehmer), g01 (Gegner),
+        sachverhalt (Kurzbeschreibung),
+        forderung_brutto, erwartete_min, erwartete_max, selbstbehalt,
+        status (z.B. 'vergleich', 'prozess', 'offen'),
+        normen (kommasepariert, z.B. 'SIA 118, OR 371'),
+        anzahl_dokumente
+
+    Tabelle 'documents':
+        id, case_id, doc_typ, datum, sprache
+
+    Beispiel-Queries:
+        SELECT COUNT(*) FROM cases
+        SELECT cluster, COUNT(*) as anzahl, AVG(forderung_brutto) as avg_betrag FROM cases GROUP BY cluster
+        SELECT case_id, forderung_brutto FROM cases WHERE status = 'prozess' ORDER BY forderung_brutto DESC
+        SELECT case_id, COUNT(*) as docs FROM documents GROUP BY case_id
+        SELECT DISTINCT doc_typ FROM documents
+
+    WICHTIG: Nur SELECT-Abfragen sind erlaubt.
 
     Args:
-        cluster: Optional — nur Fälle dieses Clusters anzeigen, z.B. "Wasser".
-                 Sucht als Teilstring (Gross-/Kleinschreibung egal).
+        query: Die SQL-Abfrage (nur SELECT).
     """
-    if not DATA_PATH.exists():
-        return f"Datenpfad nicht gefunden: {DATA_PATH}"
+    if not SQLITE_PATH.exists():
+        return "Datenbank nicht gefunden. Bitte zuerst 'python indexer.py' ausführen."
 
-    cases = []
-    for case_dir in sorted(DATA_PATH.iterdir()):
-        if not case_dir.is_dir():
-            continue
-        bible_path = case_dir / "case_bible.json"
-        if not bible_path.exists():
-            continue
+    query_upper = query.strip().upper()
+    if not query_upper.startswith("SELECT"):
+        return "Fehler: Nur SELECT-Abfragen sind erlaubt."
 
-        with open(bible_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
+    db = sqlite3.connect(str(SQLITE_PATH))
+    db.row_factory = sqlite3.Row
+    try:
+        cursor = db.execute(query)
+        rows = cursor.fetchall()
+        if not rows:
+            return "Keine Ergebnisse."
 
-        case_cluster = data.get("cluster", "")
+        # Spalten-Namen holen
+        columns = [desc[0] for desc in cursor.description]
+        # Formatierte Ausgabe
+        lines = [" | ".join(columns)]
+        lines.append("-" * len(lines[0]))
+        for row in rows:
+            lines.append(" | ".join(str(v) for v in row))
 
-        if cluster and cluster.lower() not in case_cluster.lower():
-            continue
-
-        status = data.get("status", "?")
-        betraege = data.get("betraege", {})
-        forderung = betraege.get("forderung_brutto", "?")
-
-        cases.append(
-            f"- {data.get('case_id', case_dir.name)}: "
-            f"{case_cluster} | Status: {status} | CHF {forderung}"
-        )
-
-    if not cases:
-        return "Keine Fälle gefunden."
-
-    return f"{len(cases)} Fälle gefunden:\n\n" + "\n".join(cases)
+        return "\n".join(lines)
+    except Exception as e:
+        return f"SQL-Fehler: {e}"
+    finally:
+        db.close()
